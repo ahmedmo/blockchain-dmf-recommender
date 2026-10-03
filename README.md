@@ -1,90 +1,53 @@
 # Blockchain-Based Decentralized Deep Matrix Factorization Recommender System
 
-This repository contains the Deep Matrix Factorization (DMF) recommendation code used to evaluate three controlled recommendation settings on the Last.fm and Douban Movie datasets:
+This repository package is organized according to the experimental workflow reported in the manuscript. It provides the finalized experiment code, selected raw recommendation outputs, blockchain contracts, deployment/execution artifacts, registered-address mappings, and machine-readable blockchain logs needed to trace the reported numerical results.
 
-- **DMF-Whole network** — DMF trained/evaluated on the whole eligible network.
-- **CC-DMF** — community-level DMF using the centralized/real community partition used by the experiments.
-- **DC-DMF** — community-level DMF using the decentralized/discovered community partition used by the experiments.
+## Repository organization
 
-The repository contains the six finalized experiment notebooks (Whole, CC-DMF, and DC-DMF for each dataset), Python-script exports, and the supplied CC/DC community-level files.
+1. `01_data_and_communities/` — points to the community files already stored under the repository `data/` directory.
+2. `02_recommendation/` — DMF-Whole network, CC-DMF, and DC-DMF experiment code for Douban Movie and Last.fm, plus raw per-user multi-seed outputs for CC-DMF and DC-DMF.
+3. `03_authorized_node_selection/` — finalized trusted authorized-node selection code using the community-level social-distance procedure.
+4. `04_announcement_confirmation_finalization/` — `AuthorizedNodeElection` smart contract, deployed addresses, registered-address mappings, and announcement/confirmation/finalization execution reports.
+5. `05_blockchain_performance/` — transaction-level machine-readable logs, stage summaries, community summaries, and run metadata used for blockchain performance reporting.
+6. `06_recommendation_delivery/` — `RecommendationDelivery` contracts, deployment records, on-chain registration/delivery records, recommendation-hash storage, and verification outputs.
+7. `07_environment_and_configuration/` — Ganache/Solidity configuration extracted from the recorded experiment metadata.
 
-## Repository structure
+See `PROVENANCE_MANIFEST.md` for the mapping between manuscript tables and repository artifacts.
 
-```text
-src/
-  lastfm/
-    dmf_whole_lastfm.py
-    cc_dmf_lastfm.py
-    dc_dmf_lastfm.py
-  douban/
-    dmf_whole_douban.py
-    cc_dmf_douban.py
-    dc_dmf_douban.py
-notebooks/
-  lastfm/
-    DMF_Whole_LastFM.ipynb
-    CC_DMF_LastFM.ipynb
-    DC_DMF_LastFM.ipynb
-  douban/
-    DMF_Whole_Douban.ipynb
-    CC_DMF_Douban.ipynb
-    DC_DMF_Douban.ipynb
-data/
-  lastfm/communities/cc/
-  lastfm/communities/dc/
-  douban/communities/cc/
-  douban/communities/dc/
-  COMMUNITY_FILES_MANIFEST.csv
-  README.md
-outputs/
-requirements.txt
-.gitignore
-```
+## Recommendation repeated-run evaluation
 
-## Evaluation organization
+The principal recommendation experiments were repeated using training seeds `42`, `52`, and `62`. Within each evaluation configuration, the split seed and evaluation seed were fixed at `42`, and the model architecture, loss, hyperparameters, and best-model selection procedure were unchanged.
 
-The finalized notebooks contain the small-K sampled ranking evaluation and the large-K ranking over the eligible item space where implemented by the corresponding experiment. These are treated as distinct evaluation protocols rather than as a single continuous K-range.
+Raw per-user outputs are organized by:
 
-## Installation
+`dataset / scenario / training seed / community`
 
-```bash
-python -m venv .venv
-# Windows
-.venv\Scripts\activate
-pip install -r requirements.txt
-```
+The included `RAW_OUTPUT_MANIFEST.csv` records the dataset, scenario, seed values, community tag, original source filename, and repository path for every bundled raw output file.
 
-The same prepared code is exported as Python scripts under `src/`. Then start Jupyter with:
+For DMF-Whole network, the finalized multi-seed notebooks are provided as regeneration scripts. For CC-DMF and DC-DMF, both the finalized notebooks and the raw per-user outputs are provided.
 
-```bash
-jupyter notebook
-```
+## Blockchain provenance
 
-## Data and community files
+The finalized blockchain notebooks include the Solidity contract source, compilation, Ganache connection, deployment, transaction submission, receipt handling, and output generation used in the experiments.
 
-The supplied CC/DC community-level files are included. The original source datasets are not redistributed in this repository. See [`data/README.md`](data/README.md) for the expected source-data layout and the community-file audit.
+The repository also includes the resulting artifacts needed for direct inspection:
 
-All local working paths such as `D:\PHD\...` were replaced in this repository copy by relative `data/` and `outputs/` paths; the experimental logic was not intentionally changed by this path cleanup.
+- Solidity contract sources and ABIs.
+- Deployed contract addresses.
+- Registered blockchain-address mappings.
+- Announcement, confirmation, and finalization reports.
+- Transaction-level machine-readable execution logs with transaction hashes and receipt-derived fields.
+- Blockchain performance summaries and run metadata.
+- Recommendation-delivery records and hash-verification outputs.
 
-### Community-file audit
+The common `AuthorizedNodeElection.sol` source is identical for the Douban Movie and Last.fm announcement/finalization experiments. The recommendation-delivery contracts are retained separately for the two dataset workflows because the recorded source files differ.
 
-All supplied community sets now match the finalized experiment code completely:
+## Environment
 
-- Douban CC-DMF: 6/6 files matched.
-- Douban DC-DMF: 6/6 files matched.
-- Last.fm CC-DMF: 7/7 files matched.
-- Last.fm DC-DMF: 13/13 files matched.
+Core Python dependencies are listed in `requirements.txt`. The blockchain experiments use Web3 and `py-solc-x`, with Solidity compiler `0.8.20`. Recorded Ganache settings are provided under `07_environment_and_configuration/`.
 
-The finalized Last.fm DC-DMF set includes `comm_U_25_I_787_104.txt`, exactly as referenced by the finalized notebook and Python export. No alternate community file is substituted.
+No private keys, Ganache mnemonic, or trained model checkpoints are included.
 
-## Reproducibility note
+## Experimental provenance note
 
-The repository copy retains the random seeds and experimental configuration encoded in the selected finalized notebooks. Generated outputs and trained checkpoints are excluded from version control. SHA-256 hashes for the included community files are recorded in `data/COMMUNITY_FILES_MANIFEST.csv`.
-
-## Citation
-
-If this code is used in academic work, please cite the associated manuscript:
-
-**A Blockchain-Based Decentralized Deep Matrix Factorization Recommender System.**
-
-A formal publication citation can be added once the bibliographic details are finalized.
+Selected raw experimental outputs, machine-readable blockchain execution logs, deployment records, and regeneration code supporting the reported numerical results are included. Trained model checkpoints are intentionally omitted because they are not required to reproduce the reported tables from the supplied code and experiment inputs.

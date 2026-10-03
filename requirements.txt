@@ -2,3 +2,5 @@ numpy
 pandas
 torch
 jupyter
+web3
+py-solc-x
