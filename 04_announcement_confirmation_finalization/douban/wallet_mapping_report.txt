@@ -1,0 +1,20 @@
+==========================================================================================
+Ganache Wallet Mapping Report
+==========================================================================================
+
+RPC_URL                         : http://127.0.0.1:7545
+Owner address                   : 0x297A2E1d3a11579E25C1A4c9AD1d83DB3cfe992D
+Total Ganache accounts           : 750
+Community member users           : 693
+Unique A_k users                 : 5
+Total mapped users               : 697
+A_k users not in community file  : 4
+
+A_k users not found in community_members.csv:
+- 28
+- 30
+- 289
+- 460
+
+ADDRESS_TO_USERID_OUT            : D:\PHD\بابل\2024\Research Reco\الجزء الثاني\Douban Reco\3 الاعلان\data\blockchain\address_to_userid.csv
+OWNER_ADDRESS_OUT                : D:\PHD\بابل\2024\Research Reco\الجزء الثاني\Douban Reco\3 الاعلان\data\blockchain\owner_address.txt

@@ -1,0 +1,23 @@
+{
+  "dataset": "Douban Movie",
+  "run_id": "PERF_20260901_003219",
+  "rpc_url": "http://127.0.0.1:7545",
+  "measurement_method": "Python Web3 submit-to-receipt timing using time.perf_counter; gas from transaction receipt.gasUsed",
+  "measurement_scope": "Contract deployment, community-member loading, authorized-node announcement, member confirmations, and finalization-triggering confirmation",
+  "note": "Local Ganache measurements; monetary cost uses Ganache effective gas price and is not a public-network fee estimate.",
+  "started_at_utc": "2026-08-31T21:32:19.560770+00:00",
+  "connected": true,
+  "chain_id": 1337,
+  "starting_block": 0,
+  "ganache_accounts": 750,
+  "contract_address": "0x27fFA41Dd35f806E2e8b320c1f074B7E33d8B902",
+  "confirmation_window_seconds": 3600,
+  "solidity_compiler": "0.8.20",
+  "compiler_optimization": true,
+  "completed_at_utc": "2026-08-31T21:35:41.284422+00:00",
+  "ending_block": 369,
+  "transaction_log": "D:\\PHD\\بابل\\2024\\Research Reco\\الجزء الثاني\\Douban Reco\\3 الاعلان\\outputs\\performance\\PERF_20260901_003219\\blockchain_performance_transactions.csv",
+  "stage_summary": "D:\\PHD\\بابل\\2024\\Research Reco\\الجزء الثاني\\Douban Reco\\3 الاعلان\\outputs\\performance\\PERF_20260901_003219\\blockchain_performance_by_stage.csv",
+  "community_summary": "D:\\PHD\\بابل\\2024\\Research Reco\\الجزء الثاني\\Douban Reco\\3 الاعلان\\outputs\\performance\\PERF_20260901_003219\\blockchain_performance_by_community.csv",
+  "measured_transactions": 369
+}

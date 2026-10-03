@@ -1,0 +1,7 @@
+﻿community_id,trusted_node_user_id,decision_basis,leader_in_I,leader_sum_dist,leader_coverage_count,trusted_node_address
+8,378,tie_coverage,False,0.0,3,0xf1667a0c3907c5Ce4b53E38490E1Db2A4357D9d4
+14,289,tie_id,False,0.0,1,0xC7912c59d036482807d42976Dc0c145de6159E9c
+84,28,tie_coverage,False,0.0,2,0x3a8d7830fecD095682572e09B9905da4B57E7A72
+96,30,tie_id,False,0.0,1,0x53E2cd2641435bbCc441cA6FCE21520206fe70f5
+101,28,tie_id,False,0.0,1,0x3a8d7830fecD095682572e09B9905da4B57E7A72
+287,460,tie_id,False,0.0,1,0xE98b036e15318D1bd89A933eED33Bee42692cF43

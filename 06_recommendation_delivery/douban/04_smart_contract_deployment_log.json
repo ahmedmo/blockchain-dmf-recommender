@@ -1,0 +1,14 @@
+{
+  "deployment_time": "2026-05-03 13:00:18",
+  "rpc_url": "http://127.0.0.1:7545",
+  "chain_id": 1337,
+  "contract_name": "RecommendationDelivery",
+  "contract_address": "0xf8FFD2353Fa7FB61fFc25750b6c5B991e2BD966e",
+  "deployment_tx_hash": "fbb6326f2479e8d943b79be8cc68c7304a079f468db239dd6472771a7b2ee545",
+  "owner_account": "0x465614492F4262B6a7f586c2079Dd6E998272De4",
+  "solidity_file": "D:\\PHD\\بابل\\2024\\Research Reco\\الجزء الثاني\\Douban Reco\\4 ايصال التوصيات بضمنها العقد\\01_contract\\RecommendationDelivery.sol",
+  "abi_path": "D:\\PHD\\بابل\\2024\\Research Reco\\الجزء الثاني\\Douban Reco\\4 ايصال التوصيات بضمنها العقد\\01_contract\\RecommendationDelivery_abi.json",
+  "contract_address_path": "D:\\PHD\\بابل\\2024\\Research Reco\\الجزء الثاني\\Douban Reco\\4 ايصال التوصيات بضمنها العقد\\01_contract\\contract_address.txt",
+  "solc_version": "0.8.20",
+  "ganache_accounts_count": 20
+}

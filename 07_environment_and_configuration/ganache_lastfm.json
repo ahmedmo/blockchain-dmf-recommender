@@ -1,0 +1,11 @@
+{
+  "dataset": "Last.fm",
+  "rpc_url": "http://127.0.0.1:7545",
+  "chain_id": 1337,
+  "ganache_accounts": 850,
+  "solidity_compiler": "0.8.20",
+  "compiler_optimization": true,
+  "confirmation_window_seconds": 3600,
+  "source_run_id": "PERF_20260901_021204",
+  "note": "Documentation extracted from the recorded run metadata and finalized experiment code; no private keys or mnemonic are included."
+}

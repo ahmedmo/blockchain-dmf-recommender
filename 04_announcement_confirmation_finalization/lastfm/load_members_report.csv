@@ -1,0 +1,14 @@
+﻿community_id,expected_members,onchain_size_before,onchain_size_after,required_confirmations,transactions_sent,status,size_matches_expected
+28,38,0,38,20,1,loaded,True
+30,66,0,66,34,2,loaded,True
+38,57,0,57,29,2,loaded,True
+40,58,0,58,30,2,loaded,True
+44,26,0,26,14,1,loaded,True
+60,136,0,136,69,3,loaded,True
+99,81,0,81,41,2,loaded,True
+104,25,0,25,13,1,loaded,True
+107,44,0,44,23,1,loaded,True
+114,28,0,28,15,1,loaded,True
+204,30,0,30,16,1,loaded,True
+211,55,0,55,28,2,loaded,True
+506,29,0,29,15,1,loaded,True

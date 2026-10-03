@@ -1,0 +1,7 @@
+﻿community_id,A_k,status,tx_sent,last_tx_hash,exists,finalized,confirm_count,required_confirmations,community_size,finalizedAk,expired,deadline
+8,378,finalized,52,0x0246f9f75318cd1767682416f5bd6e3be60372cde7f7e1831ebc9b7e79339af6,True,True,53,53,104,378,False,1788215600
+14,289,finalized,68,0x8d6b5e7adf77b9fd087415d684d3e5df68f36ca772b6e58b85abd19e14146779,True,True,69,69,137,289,False,1788215600
+84,28,finalized,58,0x72d99aff84f80622905f1d9075713746db513d05edd83aec0c1b266983d45358,True,True,59,59,117,28,False,1788215600
+96,30,finalized,68,0x39cac31ce307429eb62b8237259fe7e9b8f1872179f8b71f223089d182e91568,True,True,69,69,137,30,False,1788215601
+101,28,finalized,40,0xc8ffbc90aa10de0dbfedd12635d0bf9e25b6faf7de12582068817577db4a0bc3,True,True,41,41,80,28,False,1788215601
+287,460,finalized,59,0x480390a8501e20b8590a9c5665f3ee7acc3b8c917fcb7cd74a47037d3263a21c,True,True,60,60,118,460,False,1788215601

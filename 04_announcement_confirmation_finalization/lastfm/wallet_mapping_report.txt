@@ -1,0 +1,22 @@
+==========================================================================================
+Last.fm Ganache Wallet Mapping Report
+==========================================================================================
+
+RPC_URL                         : http://127.0.0.1:7545
+Owner address                   : 0xC93B1093889dB280F60B4b0436c9f1a121D5D7f9
+Total Ganache accounts           : 850
+Community member users           : 673
+Unique A_k users                 : 13
+Total mapped users               : 679
+A_k users not in community file  : 6
+
+A_k users not found in community_members.csv:
+- 70
+- 189
+- 382
+- 585
+- 1694
+- 2043
+
+ADDRESS_TO_USERID_OUT            : D:\PHD\بابل\2024\Research Reco\الجزء الثاني\lastfmReco\3_الاعلان\data\blockchain\address_to_userid.csv
+OWNER_ADDRESS_OUT                : D:\PHD\بابل\2024\Research Reco\الجزء الثاني\lastfmReco\3_الاعلان\data\blockchain\owner_address.txt

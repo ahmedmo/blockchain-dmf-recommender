@@ -1,0 +1,42 @@
+{
+  "dataset": "Last.fm",
+  "stage": "Recommendation Delivery",
+  "contract_name": "RecommendationDelivery",
+  "contract_address": "0x5071DE85Ef0917C7aAf5943Fe98e2806A0C637bd",
+  "chain_id": 1337,
+  "owner_account": "0xf24B340783Aa1bbE02A67eA48557B3aD2b7f3e92",
+  "delivery_top_n": 5,
+  "delivery_version": 2,
+  "common_communities": [
+    28,
+    30,
+    38,
+    40,
+    44,
+    60,
+    99,
+    104,
+    107,
+    114,
+    204,
+    211,
+    506
+  ],
+  "common_communities_count": 13,
+  "recommendation_files_count": 13,
+  "total_expected_community_users": 673,
+  "total_payloads_created": 672,
+  "total_hashes_stored_new": 672,
+  "total_already_existing_records": 0,
+  "total_successful_records": 672,
+  "total_skipped_no_recommendations": 1,
+  "total_failed_records": 0,
+  "status_counts": {
+    "stored_onchain": 672,
+    "skipped_no_recommendations": 1
+  },
+  "hash_storage_report_path": "D:\\PHD\\بابل\\2024\\Research Reco\\الجزء الثاني\\lastfmReco\\4 ايصال التوصيات بضمنها العقد\\03_outputs\\RECOMMENDATION_DELIVERY_TOP5_V2\\07_recommendation_hash_storage_report.csv",
+  "payload_index_path": "D:\\PHD\\بابل\\2024\\Research Reco\\الجزء الثاني\\lastfmReco\\4 ايصال التوصيات بضمنها العقد\\03_outputs\\RECOMMENDATION_DELIVERY_TOP5_V2\\07_payload_index.csv",
+  "payload_dir": "D:\\PHD\\بابل\\2024\\Research Reco\\الجزء الثاني\\lastfmReco\\4 ايصال التوصيات بضمنها العقد\\03_outputs\\RECOMMENDATION_DELIVERY_TOP5_V2\\payloads",
+  "created_at": "2026-06-10 03:08:36"
+}

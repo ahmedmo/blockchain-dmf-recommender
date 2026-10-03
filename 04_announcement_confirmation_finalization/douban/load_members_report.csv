@@ -1,0 +1,7 @@
+﻿community_id,expected_members,onchain_size_before,onchain_size_after,required_confirmations,transactions_sent
+8,104,0,104,53,3
+14,137,0,137,69,3
+84,117,0,117,59,3
+96,137,0,137,69,3
+101,80,0,80,41,2
+287,118,0,118,60,3

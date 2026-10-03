@@ -1,0 +1,33 @@
+{
+  "deployment_time": "2026-06-10 01:30:18",
+  "dataset": "Last.fm",
+  "stage": "Recommendation Delivery",
+  "rpc_url": "http://127.0.0.1:7545",
+  "chain_id": 1337,
+  "contract_name": "RecommendationDelivery",
+  "contract_address": "0x5071DE85Ef0917C7aAf5943Fe98e2806A0C637bd",
+  "deployment_tx_hash": "140476903bd7add95303c290463c47b22c2d0bfc97a060f560d8e2a72df3e473",
+  "owner_account": "0xf24B340783Aa1bbE02A67eA48557B3aD2b7f3e92",
+  "solidity_file": "D:\\PHD\\بابل\\2024\\Research Reco\\الجزء الثاني\\lastfmReco\\4 ايصال التوصيات بضمنها العقد\\01_contract\\RecommendationDelivery.sol",
+  "abi_path": "D:\\PHD\\بابل\\2024\\Research Reco\\الجزء الثاني\\lastfmReco\\4 ايصال التوصيات بضمنها العقد\\01_contract\\RecommendationDelivery_abi.json",
+  "contract_address_path": "D:\\PHD\\بابل\\2024\\Research Reco\\الجزء الثاني\\lastfmReco\\4 ايصال التوصيات بضمنها العقد\\01_contract\\contract_address.txt",
+  "solc_version": "0.8.20",
+  "ganache_accounts_count": 850,
+  "common_communities_count": 13,
+  "common_communities": [
+    28,
+    30,
+    38,
+    40,
+    44,
+    60,
+    99,
+    104,
+    107,
+    114,
+    204,
+    211,
+    506
+  ],
+  "note": "This contract stores recommendation hashes only for common Last.fm communities."
+}
